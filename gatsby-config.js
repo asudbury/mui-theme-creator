@@ -2,7 +2,9 @@ module.exports = {
   pathPrefix: `/mui-theme-creator`,
   siteMetadata: {
     title: `Material-UI Theme Creator`,
-    description: `Kick off your next, great Material-UI project with a customized theme.`
+    description: `Kick off your next, great Material-UI project with a customized theme.`,
+    author: `@asudbury`,	
+    url: "https://asudbury.github.io/mui-theme-creator",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
