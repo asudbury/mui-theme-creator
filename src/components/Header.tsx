@@ -51,7 +51,7 @@ const Header = ({ className }) => {
         <div>
           <TutorialButton />
           <IconButton
-            href="https://github.com/bareynol/mui-theme-creator"
+            href="https://github.com/asudbury/mui-theme-creator"
             target="_blank"
             rel="noreferrer"
           >
