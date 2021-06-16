@@ -16,7 +16,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { setActiveTab } from "src/state/actions"
 import { RootState } from "src/state/types"
 
-const drawerWidth: React.CSSProperties["width"] = 200
+const drawerWidth: React.CSSProperties["width"] = 250
 
 const useStyles = makeStyles(theme => ({
   drawer: {

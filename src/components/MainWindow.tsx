@@ -20,6 +20,8 @@ import { RootState } from "src/state/types"
 import MaterialUiIcon from "mdi-material-ui/MaterialUi"
 import BrushIcon from "@material-ui/icons/Brush"
 
+import options from "../options"
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     mainWindow: {
@@ -64,21 +66,33 @@ const MainWindow = () => {
             <MaterialUiIcon />
           </IconButton>
         </Hidden>
-        <Tabs
-          value={activeTab}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="scrollable"
-          onChange={(event, value) => setTab(value)}
-          classes={{
-            root: classes.tabs,
-            flexContainer: classes.tabFlexContainer,
-          }}
-        >
-          <Tab label="Preview" value="preview" id={previewTabId} />
-          <Tab label="Components" value="components" id={componentsTabId} />
-          <Tab label="Saved Themes" value="saved" id={savedThemesTabId} />
-        </Tabs>
+
+        {options.showTabs && (
+          <Tabs
+            value={activeTab}
+            indicatorColor="primary"
+            textColor="primary"
+            variant="scrollable"
+            onChange={(event, value) => setTab(value)}
+            classes={{
+              root: classes.tabs,
+              flexContainer: classes.tabFlexContainer,
+            }}
+          >
+            {options.showPreview && (
+              <Tab label="Preview" value="preview" id={previewTabId} />
+            )}
+
+            {options.showComponents && (
+              <Tab label="Components" value="components" id={componentsTabId} />
+            )}
+
+            {options.showSavedThemes && (
+              <Tab label="Saved Themes" value="saved" id={savedThemesTabId} />
+            )}
+          </Tabs>
+        )}
+
         <Hidden smUp>
           <IconButton onClick={() => dispatch({ type: "TOGGLE_THEME_CONFIG" })}>
             <BrushIcon />

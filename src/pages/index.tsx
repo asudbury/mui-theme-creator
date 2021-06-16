@@ -6,10 +6,11 @@ import ComponentNavDrawer from "src/components/ComponentNavDrawer"
 import Header from "src/components/Header"
 import Layout from "src/components/Layout"
 import MainWindow from "src/components/MainWindow"
-import SmallScreenWarning from "src/components/SmallScreenWarning"
 import ThemeConfigDrawer from "src/components/ThemeConfigDrawer"
 import Tutorial from "src/components/Tutorial"
 import ErrorBoundary from "src/components/ErrorBoundary"
+
+import options from "../options"
 
 const useStyles = makeStyles(theme => ({
   appRoot: {
@@ -60,10 +61,9 @@ const IndexPage = () => {
             </div>
           </div>
 
-          <ThemeConfigDrawer />
+          {options.showConfigDrawer && <ThemeConfigDrawer />}
         </ErrorBoundary>
       </div>
-      <SmallScreenWarning />
       <Tutorial />
     </Layout>
   )

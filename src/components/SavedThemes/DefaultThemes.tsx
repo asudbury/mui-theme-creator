@@ -14,7 +14,7 @@ import {
 import { useDispatch } from "react-redux"
 import { addNewDefaultTheme } from "src/state/actions"
 import { NewSavedTheme } from "src/state/types"
-import defaultThemes from "./defaultThemes"
+import defaultThemeList from "./defaultThemeList"
 import ThemeThumbnail from "./ThemeThumbnail"
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -107,7 +107,7 @@ function DefaultThemes() {
           wrap="nowrap"
           className={classes.templateContainer}
         >
-          {defaultThemes.map(t => (
+          {defaultThemeList.map(t => (
             <Grid item key={t.name} onClick={() => handleClickTheme(t)}>
               <ButtonBase className={classes.buttonRoot}>
                 <div className={classes.thumbnailContainer}>

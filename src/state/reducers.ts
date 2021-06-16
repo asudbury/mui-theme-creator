@@ -28,7 +28,7 @@ const initialState: RootState = {
     },
   },
   loadedFonts: new Set(),
-  activeTab: "preview",
+  activeTab: "components",
   previewSize: false,
   tutorialStep: 0,
   tutorialOpen: false,

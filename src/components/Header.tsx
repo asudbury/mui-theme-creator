@@ -5,22 +5,22 @@ import {
   Toolbar,
   Typography,
   makeStyles,
-  Link,
   IconButton,
 } from "@material-ui/core"
-import muiVersion from "src/muiVersion"
 import TutorialButton from "./Tutorial/TutorialButton"
 import GitHubIcon from "@material-ui/icons/GitHub"
+
+import options from "../options"
+import { useSelector } from "react-redux"
+import { RootState } from "src/state/types"
 
 const useStyles = makeStyles(theme => ({
   title: {
     fontSize: theme.typography.h6.fontSize,
     lineHeight: theme.typography.h6.fontSize,
   },
-  version: {
-    fontSize: theme.typography.caption.fontSize,
-    lineHeight: theme.typography.caption.fontSize,
-    fontWeight: 700,
+  adrian: {
+    fontSize: 11,
   },
   toolbar: {
     display: "flex",
@@ -29,6 +29,10 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const Header = ({ className }) => {
+  const themeName = useSelector(
+    (state: RootState) => state.savedThemes[state.themeId].name
+  )
+
   const classes = useStyles()
   return (
     <AppBar position="static" color="default" className={className}>
@@ -37,19 +41,16 @@ const Header = ({ className }) => {
           <Typography variant="h6" className={classes.title}>
             Material-UI Theme Creator
           </Typography>
-          <Typography variant="caption" className={classes.version}>
-            {"└─ "}
-            <Link
-              href="https://material-ui.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {`@material-ui/core@${muiVersion}`}
-            </Link>
+          <Typography variant="body2" className={classes.adrian}>
+            Adrian Sudbury
           </Typography>
         </div>
         <div>
-          <TutorialButton />
+          <Typography variant="h5">Theme : {themeName}</Typography>
+        </div>
+        <div>
+          {options.showTutorial && <TutorialButton />}
+
           <IconButton
             href="https://github.com/asudbury/mui-theme-creator"
             target="_blank"
