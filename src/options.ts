@@ -28,8 +28,10 @@ const options = {
 }
 
 function getItem(name: string, defaultValue: string): string {
+  const isBrowser = typeof window !== "undefined"
+
   /// first check the url parameters!!
-  if (window) {
+  if (isBrowser) {
     const queryString = window.location.search
     const urlParams = new URLSearchParams(queryString)
 
