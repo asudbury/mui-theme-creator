@@ -14,7 +14,7 @@ exports.onCreateWebpackConfig = ({
   plugins,
   actions,
 }) => {
-  if (stage === "build-html") {
+  if (stage === "build-html" || stage === "develop-html") {
     actions.setWebpackConfig({
       plugins: [
         new MonacoWebpackPlugin({
