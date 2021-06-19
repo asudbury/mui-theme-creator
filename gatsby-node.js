@@ -14,11 +14,13 @@ exports.onCreateWebpackConfig = ({
   plugins,
   actions,
 }) => {
-  actions.setWebpackConfig({
-    plugins: [
-      new MonacoWebpackPlugin({
-        languages: ["javascript", "css", "html", "typescript"],
-      }),
-    ],
-  })
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      plugins: [
+        new MonacoWebpackPlugin({
+          languages: ["javascript", "css", "html", "typescript"],
+        }),
+      ],
+    })
+  }
 }
