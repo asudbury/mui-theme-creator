@@ -29,22 +29,26 @@ const options = {
 
 function getItem(name: string, defaultValue: string): string {
   /// first check the url parameters!!
-  const queryString = window.location.search
-  const urlParams = new URLSearchParams(queryString)
+  if (window) {
+    const queryString = window.location.search
+    const urlParams = new URLSearchParams(queryString)
 
-  const urlParam = urlParams.get(name)
+    const urlParam = urlParams.get(name)
 
-  if (urlParam) {
-    return urlParam
+    if (urlParam) {
+      return urlParam
+    }
+
+    const value = localStorage.getItem(name)
+
+    if (!value) {
+      return defaultValue
+    }
+
+    return value
   }
 
-  const value = localStorage.getItem(name)
-
-  if (!value) {
-    return defaultValue
-  }
-
-  return value
+  return ""
 }
 
 function getItemAsBoolean(name: string, defaultValue: boolean): boolean {
