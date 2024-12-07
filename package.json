@@ -19,7 +19,7 @@
     "gatsby-plugin-root-import": "^2.0.5",
     "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-source-filesystem": "^2.11.1",
-    "gatsby-transformer-sharp": "^2.5.7",
+    "gatsby-transformer-sharp": "^2.12.1",
     "json5": "^2.2.3",
     "mdi-material-ui": "^6.18.0",
     "moment": "^2.30.1",
