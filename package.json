@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@types/codemirror": "^5.60.15",
-    "@types/dot-prop-immutable": "^1.5.1",
+    "@types/dot-prop-immutable": "^1.5.4",
     "@types/jest": "^26.0.9",
     "@types/prettier": "^2.0.2",
     "@types/react-color": "^3.0.4",
