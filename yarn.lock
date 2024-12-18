@@ -2388,10 +2388,10 @@
   dependencies:
     "@types/ms" "*"
 
-"@types/dot-prop-immutable@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@types/dot-prop-immutable/-/dot-prop-immutable-1.5.1.tgz#69c3d12edf8fe5443d30c52e4028c0d533891096"
-  integrity sha512-tRYro5KWGLY9HPkt/CnrzjJyDKitJCMUN9QgMv+5aV+1N2JSFtoTcaLlDHPRCW0qDv7GY6WqicmMEe+xsVxpog==
+"@types/dot-prop-immutable@^1.5.4":
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@types/dot-prop-immutable/-/dot-prop-immutable-1.5.4.tgz#d57a1f048a7af653c637237e38f885b58f089d2c"
+  integrity sha512-opGDw36qtv2v6XFs0dJR8BnegofPG3336ZkQbt+OBkjrbAqVHTjAoYaYeK9dU9ezGAO36wCI35xg1DravR5EeA==
 
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
