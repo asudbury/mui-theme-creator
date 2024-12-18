@@ -2628,10 +2628,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-color@^3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@types/react-color/-/react-color-3.0.4.tgz#c63daf012ad067ac0127bdd86725f079d02082bd"
-  integrity sha512-EswbYJDF1kkrx93/YU+BbBtb46CCtDMvTiGmcOa/c5PETnwTiSWoseJ1oSWeRl/4rUXkhME9bVURvvPg0W5YQw==
+"@types/react-color@^3.0.12":
+  version "3.0.12"
+  resolved "https://registry.yarnpkg.com/@types/react-color/-/react-color-3.0.12.tgz#231e75f11dd6805bdf1c954774588fefc8172f30"
+  integrity sha512-pr3uKE3lSvf7GFo1Rn2K3QktiZQFFrSgSGJ/3iMvSOYWt2pPAJ97rVdVfhWxYJZ8prAEXzoP2XX//3qGSQgu7Q==
   dependencies:
     "@types/react" "*"
     "@types/reactcss" "*"
