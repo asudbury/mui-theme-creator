@@ -42,7 +42,7 @@
     "@types/dot-prop-immutable": "^1.5.4",
     "@types/jest": "^26.0.9",
     "@types/prettier": "^2.0.2",
-    "@types/react-color": "^3.0.4",
+    "@types/react-color": "^3.0.12",
     "@types/react-redux": "^7.1.9",
     "@types/webfontloader": "^1.6.38",
     "babel-jest": "^29.7.0",
