@@ -3,7 +3,7 @@
   "name": "material-ui-theme-creator",
   "description": "A comprehensive tool to customize themes for Material-UI",
   "dependencies": {
-    "@loadable/component": "^5.16.4",
+    "@loadable/component": "^5.16.7",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
