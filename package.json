@@ -38,7 +38,7 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "@types/codemirror": "^5.60.15",
+    "@types/codemirror": "^5.60.16",
     "@types/dot-prop-immutable": "^1.5.4",
     "@types/jest": "^29.5.14",
     "@types/prettier": "^3.0.0",
